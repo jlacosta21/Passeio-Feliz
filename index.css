@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #4FD1C5;
+  --color-brand-secondary: #4169E1;
+  --color-brand-moss: #4F7942;
+  --color-brand-bg: #F8FAFC;
+  --color-brand-text: #1A202C;
+  
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply text-brand-text bg-brand-bg;
+  }
+}
+
+.markdown-body {
+  @apply max-w-none space-y-6;
+}
+
+.markdown-body p {
+  @apply leading-relaxed;
+}
